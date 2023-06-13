@@ -1,0 +1,51 @@
+/* || VARIABLES */
+:root {
+    --clr-light-cyan: hsl(193, 38%, 86%);
+    --clr-neon-green: hsl(150, 100%, 66%);
+    --clr-grayish-blue: hsl(217, 19%, 38%);
+    --clr-dark-grayish-blue: hsl(217, 19%, 24%);
+    --clr-dark-blue: hsl(218, 23%, 16%);
+
+    --ff-main: 'Manrope', sans-serif;
+
+    --fw-main: 800
+}
+
+/* || RESET DEFAULT */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+img, svg {
+    display: block;
+    width: 100%;
+}
+
+/* || STYLES */
+/* hide something from screen reader */
+/* https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html */
+.visually-hidden:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: insert(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
