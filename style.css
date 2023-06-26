@@ -1,6 +1,6 @@
 /* || VARIABLES */
 :root {
-    --clr-light-cyan: hsl(193, 38%, 86%);
+    --clr-light-cyan: #cee3e9;
     --clr-neon-green: hsl(150, 100%, 66%);
     --clr-grayish-blue: hsl(217, 19%, 38%);
     --clr-dark-grayish-blue: hsl(217, 19%, 24%);
@@ -38,6 +38,45 @@ img, svg {
 }
 
 /* || STYLES */
+body {
+    font-family: var(--ff-main);
+    background-color: var(--clr-dark-blue);
+    margin-top: 8rem;
+}
+
+.advice {
+    background-color: var(--clr-dark-grayish-blue);
+    text-align: center;
+    margin: 0 1rem;
+    padding: 3rem 2rem 5rem;
+    border-radius: 0.7rem;
+}
+
+.advice__text-area__id {
+    color: var(--clr-neon-green);
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 2rem;
+}
+
+.advice__text-area__paragraph {
+    color: var(--clr-light-cyan);
+    font-size: 1.5rem;
+}
+
+.quote {
+    display: inline-block; 
+    height: 0.45rem;
+    width: auto;
+    vertical-align:super;
+}
+
+.right {
+    transform: rotate(180deg);
+}
+
+
 /* hide something from screen reader */
 /* https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html */
 .visually-hidden:not(:focus):not(:active) {
